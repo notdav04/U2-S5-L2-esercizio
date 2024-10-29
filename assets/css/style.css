@@ -403,11 +403,21 @@ h1 {
   position: relative;
   z-index: 1;
 }
-main article #underline {
+
+#underlined-box * {
+  display: block;
+}
+#underlined-box #underline {
   position: absolute;
-  top: 8.5rem;
-  z-index: 0;
-  width: 80%;
+  bottom: -10px;
+  z-index: -10;
+}
+#underlined-box span {
+  z-index: 1;
+}
+#underlined-box,
+h1 {
+  display: inline-block;
 }
 main {
   position: relative;
